@@ -2,6 +2,16 @@
 
 MEDOpedia is a comprehensive medicine information portal for India, providing detailed information about medicines, their usage, side effects, and more.
 
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/c3422767-7855-4122-b929-ff16d30dfc99" />
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/bbcf0ea9-6d98-40bb-8bad-7a5008834d48" />
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/4ba1c3d4-ae30-466f-b418-22a8305fb4ca" />
+
+<img width="640" alt="image" src="https://github.com/user-attachments/assets/ccc16358-045d-4daf-be4a-114b7a4ecfc1" />
+
+
+
 ## Features
 
 - Advanced medicine search functionality
