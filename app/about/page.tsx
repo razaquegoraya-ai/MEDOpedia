@@ -1,0 +1,379 @@
+import Link from "next/link"
+import Image from "next/image"
+import { Button } from "@/components/ui/button"
+import { CheckCircle2, Users, BookOpen, Award, HeartHandshake } from "lucide-react"
+
+export default function AboutPage() {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-16 items-center">
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/placeholder.svg?height=32&width=32"
+              alt="MEDOpedia Logo"
+              width={32}
+              height={32}
+              className="rounded-md"
+            />
+            <span className="text-xl font-bold tracking-tight">MEDOpedia</span>
+          </Link>
+          <nav className="ml-auto flex gap-4 sm:gap-6">
+            <Link href="/" className="text-sm font-medium hover:underline underline-offset-4">
+              Home
+            </Link>
+            <Link href="/categories" className="text-sm font-medium hover:underline underline-offset-4">
+              Categories
+            </Link>
+            <Link href="/about" className="text-sm font-medium text-emerald-600 underline underline-offset-4">
+              About
+            </Link>
+            <Link href="/contact" className="text-sm font-medium hover:underline underline-offset-4">
+              Contact
+            </Link>
+          </nav>
+        </div>
+      </header>
+      <main className="flex-1">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-emerald-50 to-white">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="space-y-4">
+                <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-800">
+                  About MEDOpedia
+                </div>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Your Trusted Source for Medicine Information in India
+                </h1>
+                <p className="text-gray-500 md:text-xl/relaxed">
+                  MEDOpedia provides comprehensive, accurate, and up-to-date information about medicines available
+                  across India. Our mission is to empower patients and healthcare professionals with reliable drug
+                  information.
+                </p>
+              </div>
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                width={600}
+                height={400}
+                alt="MEDOpedia team of medical professionals"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Mission</h2>
+                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  We believe that access to accurate medicine information is a fundamental right. Our mission is to
+                  provide a comprehensive, reliable, and accessible resource for everyone in India.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12">
+              <div className="space-y-4">
+                <ul className="grid gap-6">
+                  <li>
+                    <div className="grid gap-1">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                        <h3 className="text-xl font-bold">Comprehensive Information</h3>
+                      </div>
+                      <p className="text-gray-500">
+                        We provide detailed information about dosage, side effects, interactions, and more for thousands
+                        of medicines available in India.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="grid gap-1">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                        <h3 className="text-xl font-bold">Accuracy & Reliability</h3>
+                      </div>
+                      <p className="text-gray-500">
+                        All information is reviewed by qualified healthcare professionals to ensure accuracy and
+                        reliability.
+                      </p>
+                    </div>
+                  </li>
+                  <li>
+                    <div className="grid gap-1">
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 className="h-5 w-5 text-emerald-600" />
+                        <h3 className="text-xl font-bold">Accessibility</h3>
+                      </div>
+                      <p className="text-gray-500">
+                        We strive to make medicine information accessible to everyone, regardless of their background or
+                        technical knowledge.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                width={600}
+                height={400}
+                alt="Medical professionals reviewing information"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-50">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Team</h2>
+                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  MEDOpedia is powered by a dedicated team of healthcare professionals, pharmacists, and technology
+                  experts committed to providing accurate and accessible medicine information.
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl gap-6 py-12 md:grid-cols-2 lg:grid-cols-4">
+              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-card p-6 text-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
+                  <Users className="h-8 w-8 text-emerald-600" />
+                </div>
+                <h3 className="text-xl font-bold">Medical Experts</h3>
+                <p className="text-sm text-gray-500">
+                  Our team includes doctors, pharmacists, and specialists who review and verify all information.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-card p-6 text-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
+                  <BookOpen className="h-8 w-8 text-emerald-600" />
+                </div>
+                <h3 className="text-xl font-bold">Researchers</h3>
+                <p className="text-sm text-gray-500">
+                  Dedicated researchers who ensure our database is comprehensive and up-to-date.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-card p-6 text-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
+                  <Award className="h-8 w-8 text-emerald-600" />
+                </div>
+                <h3 className="text-xl font-bold">Quality Assurance</h3>
+                <p className="text-sm text-gray-500">
+                  Specialists who ensure all information meets our high standards for accuracy and clarity.
+                </p>
+              </div>
+              <div className="flex flex-col items-center space-y-4 rounded-lg border bg-card p-6 text-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100">
+                  <HeartHandshake className="h-8 w-8 text-emerald-600" />
+                </div>
+                <h3 className="text-xl font-bold">Support Team</h3>
+                <p className="text-sm text-gray-500">
+                  Dedicated professionals who help users find the information they need.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              <Image
+                src="/placeholder.svg?height=400&width=600"
+                width={600}
+                height={400}
+                alt="MEDOpedia's journey"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+              />
+              <div className="space-y-4">
+                <div className="inline-block rounded-lg bg-emerald-100 px-3 py-1 text-sm text-emerald-800">
+                  Our Journey
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">From Vision to Reality</h2>
+                <p className="text-gray-500 md:text-xl/relaxed">
+                  MEDOpedia began with a simple vision: to create a comprehensive, reliable, and accessible source of
+                  medicine information for everyone in India. What started as a small database has grown into one of
+                  India's most trusted medicine information resources.
+                </p>
+                <p className="text-gray-500 md:text-xl/relaxed">
+                  Today, we continue to expand our database, improve our platform, and find new ways to make medicine
+                  information more accessible to all.
+                </p>
+                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                  <Link
+                    href="/contact"
+                    className="inline-flex h-10 items-center justify-center rounded-md bg-emerald-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-emerald-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-emerald-700"
+                  >
+                    Join Our Team
+                  </Link>
+                  <Button variant="outline" asChild>
+                    <Link href="/contact">Contact Us</Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer className="border-t bg-gray-50">
+        <div className="container flex flex-col gap-6 py-8 md:py-12">
+          <div className="flex flex-col gap-6 md:flex-row md:gap-8 lg:gap-12">
+            <div className="flex-1 space-y-4">
+              <Link href="/" className="flex items-center gap-2">
+                <Image
+                  src="/placeholder.svg?height=32&width=32"
+                  alt="MEDOpedia Logo"
+                  width={32}
+                  height={32}
+                  className="rounded-md"
+                />
+                <span className="text-xl font-bold tracking-tight">MEDOpedia</span>
+              </Link>
+              <p className="text-sm text-gray-500">Your comprehensive guide to medicines available across India.</p>
+              <div className="flex gap-4">
+                <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                  <span className="sr-only">Twitter</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-5 w-5"
+                  >
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
+                  </svg>
+                </Link>
+                <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                  <span className="sr-only">Instagram</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-5 w-5"
+                  >
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                </Link>
+                <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                  <span className="sr-only">Facebook</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="h-5 w-5"
+                  >
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+            <div className="grid flex-1 grid-cols-2 gap-8 sm:grid-cols-3">
+              <div className="space-y-3">
+                <h3 className="text-sm font-medium">Resources</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Medicine Database
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Drug Interactions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Side Effects
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Dosage Guidelines
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-sm font-medium">Company</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link href="/about" className="text-gray-500 hover:text-emerald-600">
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Careers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-gray-500 hover:text-emerald-600">
+                      Contact
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Partners
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-sm font-medium">Legal</h3>
+                <ul className="space-y-2 text-sm">
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Terms of Service
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Disclaimer
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="#" className="text-gray-500 hover:text-emerald-600">
+                      Cookie Policy
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="border-t pt-6 text-center text-sm text-gray-500">
+            <p>© {new Date().getFullYear()} MEDOpedia. All rights reserved.</p>
+            <p className="mt-1">
+              MEDOpedia is for informational purposes only. Always consult a healthcare professional for medical advice.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  )
+}
